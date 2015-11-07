@@ -1,0 +1,110 @@
+
+/*text-box styling*/
+
+.text-box {
+	width: 50%;
+	/*height: 7em;*/
+	padding: 1em 0;
+	border: .5em solid black;
+	margin: 1em auto;
+}
+
+.items {
+	margin: 1em 7.5em;
+}
+
+.text-box h1 {
+	font-weight: 900;
+}
+
+/*listed-items styling*/
+
+ul {
+	list-style: none;
+}
+
+h2, h3 {
+	font-size: 1.5em;
+}
+
+.shoppinglist-title h2 {
+	position: relative;
+	left: 1em;
+	top: 2em;
+}
+
+.shoppinglist-title h3 {
+	position: relative;
+	left: 18em;
+	top: -.18em;
+}
+
+.listed-items {
+	width: 50%;
+	/*height: 25em;*/
+	border: .5em solid black;
+	margin: 1em auto;
+}
+
+.shoppinglist-title h1 {
+	text-align: center;
+}
+
+.button-headers {
+	margin-top: -3em;
+}
+
+
+label {
+	width: 13em;
+	display: inline-block;
+	margin-left: 3em;
+}
+
+input[type="checkbox"] {
+	display: inline-block;
+	width: 5em;
+}
+
+.list-of-items button {
+	margin-left: 4em;
+}
+
+input[type="checkbox"]:checked + label {
+	text-decoration: line-through;
+}
+
+/*removed-list styling*/
+
+.removed-list {
+	width: 50%;
+	border: .5em solid black;
+	height: 15em;
+	margin: 1em auto;
+}
+
+.removed-list-of-items {
+	width: 33%;
+}
+
+.removed-list-title h1 {
+	text-align: center;
+}
+
+.removed-list button {
+	margin-left: 6em;
+	width: 1em;
+	height: 1em;
+}
+
+.add-back-buttons {
+	width: 45%;
+	position: relative;	
+	top: -5em;
+	left: 16em;
+}
+
+.removed-button-headers h2{
+	position: relative;
+	left: 11.5em;
+}
