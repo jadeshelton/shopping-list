@@ -5,7 +5,7 @@ $(document).ready(function() {
 
 
  $("ul").on("click", "button", function() {
-	$(this).parent().remove();
+	$(this).closest(".added-item").remove();
 
 });
 
@@ -13,16 +13,9 @@ $(document).ready(function() {
 
 $(".text-box button").click(function(){
 	var input = $("input[name='ShoppingListItem']").val();
-	$(".list-of-items").append('<li>' + '<input type="checkbox"/>' + 
-		'<label>' + input + '</label>' + 
-		'<button>' + 'Remove' + '</button>' + 
-		'<hr>' + '</hr>' + 
-		'</li>');
+	$(".list-of-items").append('<div class="added-item"><li><input type="checkbox"/><label>' + input + '</label><div class="remove-button"><button>Remove</button></div><br></li></div>');
 	$(".items")[0].reset();
 	return false;
 });
 
 });
-
-//try to make it not add blankness (and character>0 or something)
-//get text box to clear after submitting
